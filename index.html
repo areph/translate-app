@@ -9,6 +9,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
     />
+    <script type="text/javascript" src="./index.js" defer></script>
   </head>
   <body>
     <section class="section">
@@ -17,18 +18,18 @@
         <p class="subtitle">AWS Serverless Sample</p>
       </div>
     </section>
-    <section>
+    <section class="section">
       <div class="container">
         <div class="field">
           <label class="label">Translate Message</label>
           <div class="control">
-            <textarea class="input is-success textarea" placeholder="Please enter message..."></textarea>
+            <textarea class="input is-success textarea" id="message" placeholder="Please enter message..."></textarea>
           </div>
         </div>
 
         <div class="field is-grouped">
           <div class="control">
-            <button class="button is-link is-success">Submit</button>
+            <button class="button is-link is-success" id="submit">Submit</button>
           </div>
         </div>
       </div>
