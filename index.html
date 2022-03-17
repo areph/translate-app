@@ -12,24 +12,40 @@
     <script type="text/javascript" src="./index.js" defer></script>
   </head>
   <body>
-    <section class="section">
-      <div class="container">
-        <h1 class="title">Translate App</h1>
+    <section class="hero is-primary">
+      <div class="hero-body">
+        <p class="title">Translate App</p>
         <p class="subtitle">AWS Serverless Sample</p>
       </div>
     </section>
     <section class="section">
       <div class="container">
         <div class="field">
-          <label class="label">Translate Message</label>
+          <label class="label">Message</label>
           <div class="control">
-            <textarea class="input is-success textarea" id="message" placeholder="Please enter message..."></textarea>
+            <textarea
+              class="input is-success textarea"
+              id="message"
+              placeholder="Please enter message..."
+            ></textarea>
           </div>
         </div>
 
         <div class="field is-grouped">
           <div class="control">
-            <button class="button is-link is-success" id="submit">Submit</button>
+            <button class="button is-link is-success" id="submit">
+              Submit
+            </button>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Translated Message</label>
+          <div class="control">
+            <textarea
+              class="input is-info textarea"
+              id="translated-message"
+              disabled
+            ></textarea>
           </div>
         </div>
       </div>

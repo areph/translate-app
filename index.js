@@ -14,4 +14,5 @@ submitButton.addEventListener('click', async () => {
     }})
     const json = await response.json()
     console.log(json['output_text']);
+    document.getElementById('translated-message').value = json['output_text']
 })
